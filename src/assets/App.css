@@ -1,0 +1,684 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.screen {
+  width: 250px;
+  margin: 0 auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+/* Helper classes */
+.font-caption {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.font-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.font-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.font-headline {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.4;
+}
+
+.bg-success {
+  background-color: #5cb85c !important;
+  color: #ffffff !important;
+}
+.text-info {
+  color: #5bc0de !important;
+}
+.text-muted {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.font-bold {
+  font-weight: 500 !important;
+}
+.text-upper {
+  text-transform: uppercase !important;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+.br-b-xs {
+  border-width: 0;
+  border-style: solid;
+  border-color: #dddddd;
+  border-bottom-width: 1px;
+}
+.pd-no {
+  padding: 0 !important;
+}
+
+.pd-t-no {
+  padding-top: 0 !important;
+}
+
+.pd-b-no {
+  padding-bottom: 0 !important;
+}
+
+.pd-l-no {
+  padding-left: 0 !important;
+}
+
+.pd-r-no {
+  padding-right: 0 !important;
+}
+
+.pd-lr-no {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pd-tb-no {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pd-xxs {
+  padding: 2px !important;
+}
+
+.pd-l-xxs {
+  padding-left: 2px !important;
+}
+
+.pd-r-xxs {
+  padding-right: 2px !important;
+}
+
+.pd-t-xxs {
+  padding-top: 2px !important;
+}
+
+.pd-b-xxs {
+  padding-bottom: 2px !important;
+}
+
+.pd-lr-xxs {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.pd-tb-xxs {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.pd-xs {
+  padding: 4px !important;
+}
+
+.pd-l-xs {
+  padding-left: 4px !important;
+}
+
+.pd-r-xs {
+  padding-right: 4px !important;
+}
+
+.pd-t-xs {
+  padding-top: 4px !important;
+}
+
+.pd-b-xs {
+  padding-bottom: 4px !important;
+}
+
+.pd-lr-xs {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+.pd-tb-xs {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.pd-sm {
+  padding: 8px !important;
+}
+
+.pd-l-sm {
+  padding-left: 8px !important;
+}
+
+.pd-r-sm {
+  padding-right: 8px !important;
+}
+
+.pd-t-sm {
+  padding-top: 8px !important;
+}
+
+.pd-b-sm {
+  padding-bottom: 8px !important;
+}
+
+.pd-lr-sm {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.pd-tb-sm {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.pd-md {
+  padding: 16px !important;
+}
+
+.pd-l-md {
+  padding-left: 16px !important;
+}
+
+.pd-r-md {
+  padding-right: 16px !important;
+}
+
+.pd-t-md {
+  padding-top: 16px !important;
+}
+
+.pd-b-md {
+  padding-bottom: 16px !important;
+}
+
+.pd-lr-md {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.pd-tb-md {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.pd-lg {
+  padding: 24px !important;
+}
+
+.pd-l-lg {
+  padding-left: 24px !important;
+}
+
+.pd-r-lg {
+  padding-right: 24px !important;
+}
+
+.pd-t-lg {
+  padding-top: 24px !important;
+}
+
+.pd-b-lg {
+  padding-bottom: 24px !important;
+}
+
+.pd-lr-lg {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.pd-tb-lg {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.pd-xl {
+  padding: 32px !important;
+}
+
+.pd-l-xl {
+  padding-left: 32px !important;
+}
+
+.pd-r-xl {
+  padding-right: 32px !important;
+}
+
+.pd-t-xl {
+  padding-top: 32px !important;
+}
+
+.pd-b-xl {
+  padding-bottom: 32px !important;
+}
+
+.pd-lr-xl {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+.pd-tb-xl {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.pd-xxl {
+  padding: 48px !important;
+}
+
+.pd-l-xxl {
+  padding-left: 48px !important;
+}
+
+.pd-r-xxl {
+  padding-right: 48px !important;
+}
+
+.pd-t-xxl {
+  padding-top: 48px !important;
+}
+
+.pd-b-xxl {
+  padding-bottom: 48px !important;
+}
+
+.pd-lr-xxl {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+}
+
+.pd-tb-xxl {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+.mr-no {
+  margin: 0 !important;
+}
+
+.mr-t-no {
+  margin-top: 0 !important;
+}
+
+.mr-b-no {
+  margin-bottom: 0 !important;
+}
+
+.mr-l-no {
+  margin-left: 0 !important;
+}
+
+.mr-r-no {
+  margin-right: 0 !important;
+}
+
+.mr-lr-no {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.mr-tb-no {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.mr-xxs {
+  margin: 2px !important;
+}
+
+.mr-l-xxs {
+  margin-left: 2px !important;
+}
+
+.mr-r-xxs {
+  margin-right: 2px !important;
+}
+
+.mr-t-xxs {
+  margin-top: 2px !important;
+}
+
+.mr-b-xxs {
+  margin-bottom: 2px !important;
+}
+
+.mr-lr-xxs {
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+.mr-tb-xxs {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.mr-xs {
+  margin: 4px !important;
+}
+
+.mr-l-xs {
+  margin-left: 4px !important;
+}
+
+.mr-r-xs {
+  margin-right: 4px !important;
+}
+
+.mr-t-xs {
+  margin-top: 4px !important;
+}
+
+.mr-b-xs {
+  margin-bottom: 4px !important;
+}
+
+.mr-lr-xs {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+.mr-tb-xs {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.mr-sm {
+  margin: 8px !important;
+}
+
+.mr-l-sm {
+  margin-left: 8px !important;
+}
+
+.mr-r-sm {
+  margin-right: 8px !important;
+}
+
+.mr-t-sm {
+  margin-top: 8px !important;
+}
+
+.mr-b-sm {
+  margin-bottom: 8px !important;
+}
+
+.mr-lr-sm {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+.mr-tb-sm {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.mr-md {
+  margin: 16px !important;
+}
+
+.mr-l-md {
+  margin-left: 16px !important;
+}
+
+.mr-r-md {
+  margin-right: 16px !important;
+}
+
+.mr-t-md {
+  margin-top: 16px !important;
+}
+
+.mr-b-md {
+  margin-bottom: 16px !important;
+}
+
+.mr-lr-md {
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+
+.mr-tb-md {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.mr-lg {
+  margin: 24px !important;
+}
+
+.mr-l-lg {
+  margin-left: 24px !important;
+}
+
+.mr-r-lg {
+  margin-right: 24px !important;
+}
+
+.mr-t-lg {
+  margin-top: 24px !important;
+}
+
+.mr-b-lg {
+  margin-bottom: 24px !important;
+}
+
+.mr-lr-lg {
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
+
+.mr-tb-lg {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.mr-xl {
+  margin: 32px !important;
+}
+
+.mr-l-xl {
+  margin-left: 32px !important;
+}
+
+.mr-r-xl {
+  margin-right: 32px !important;
+}
+
+.mr-t-xl {
+  margin-top: 32px !important;
+}
+
+.mr-b-xl {
+  margin-bottom: 32px !important;
+}
+
+.mr-lr-xl {
+  margin-left: 32px !important;
+  margin-right: 32px !important;
+}
+
+.mr-tb-xl {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+.mr-xxl {
+  margin: 48px !important;
+}
+
+.mr-l-xxl {
+  margin-left: 48px !important;
+}
+
+.mr-r-xxl {
+  margin-right: 48px !important;
+}
+
+.mr-t-xxl {
+  margin-top: 48px !important;
+}
+
+.mr-b-xxl {
+  margin-bottom: 48px !important;
+}
+
+.mr-lr-xxl {
+  margin-left: 48px !important;
+  margin-right: 48px !important;
+}
+
+.mr-tb-xxl {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+}
+
+/*Stack child items vertically*/
+
+.flex-vbox {
+  display: flex !important;
+  /*Align children vetically*/
+  flex-direction: column;
+  align-content: flex-start;
+  /* overflow: hidden; */
+  /*Prevent extending beyond boundaries*/
+}
+
+/*Stack child items horizontally*/
+.flex-hbox {
+  display: flex !important;
+  /*Align children horizontally*/
+  flex-direction: row;
+  align-content: flex-start;
+  /*Wrap items to next line on main-axis*/
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  /*Prevent extending beyond boundaries*/
+}
+
+/*Stretch item along parent's main-axis*/
+.flex-full {
+  flex: 1;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.flex-inline {
+  display: inline-block;
+}
+
+/*Stretch item along parent's cross-axis Overrides any cross-* class of parent*/
+.flex-stretch-self {
+  align-self: stretch;
+}
+
+/*Center item along parent's cross-axis. Overrides any cross-* class of parent*/
+.flex-center-self {
+  align-self: center;
+}
+
+.flex-end-self {
+  align-self: flex-end;
+}
+
+/*Stack child items to the main-axis start*/
+.flex-main-start {
+  justify-content: flex-start;
+}
+
+/*Stack child items to the cross-axis start*/
+.flex-cross-start {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+/*Stack child items to the main-axis center*/
+.flex-main-center {
+  justify-content: center;
+}
+
+/*Stack child items to the main-axis with gutter space between*/
+.flex-main-space-between {
+  justify-content: space-between;
+}
+
+/*Stack child items to the main-axis with gutter space around*/
+.flex-main-space-around {
+  justify-content: space-around;
+}
+
+/*Stack child items to the main-axis with spaced evenly*/
+.flex-main-space-evenly {
+  justify-content: space-evenly;
+}
+
+/*Stack child items to the cross-axis center*/
+.flex-cross-center {
+  align-items: center;
+  align-content: center;
+}
+
+/*Stack child items to the main-axis end.*/
+.flex-main-end {
+  justify-content: flex-end;
+}
+
+/*Stack child items to the cross-axis end.*/
+.flex-cross-end {
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+/*Stretch child items along the cross-axis*/
+.flex-cross-stretch {
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/*Wrap items to next line on main-axis*/
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/*Don't wrap items to next line on main-axis*/
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/*Stack child items vertically*/
+/* Helper classes */
